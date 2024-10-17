@@ -6,6 +6,20 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+.navigate-btn {
+  @apply hover:bg-pink-300 bg-pink-200 rounded-lg border-none hover:text-zinc-950 btn lg:hover:px-6 lg:hover:duration-500 transition-all duration-300 ease-in-out;
+  transition-property: transform, background-color, padding;
+}
+
+.navigate-btn.active {
+  @apply px-8 bg-pink-600 text-white transition-all;
+  transition-property: transform, background-color, padding;
+  @apply scale-110;
+}
+
+.drawer {
+  transition: transform 1s ease-in;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
